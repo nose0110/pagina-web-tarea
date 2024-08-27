@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bases de Datos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffc107;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 5px solid #ffc107;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            border-left: 5px solid #343a40;
+            border-right: 5px solid #343a40;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #343a40;
+            background-color: #ffc107;
+            padding: 10px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #343a40;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #ffc107;
+            border-top: 5px solid #ffc107;
+            margin-top: 30px;
+        }
+
+        footer h1 {
+            margin: 5px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Introducción a Bases de Datos</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es una BD?</h2>
+            <p>Una Base de Datos (BD) es un conjunto organizado de datos que se almacenan y se acceden electrónicamente. Las bases de datos permiten gestionar grandes cantidades de información de manera eficiente, proporcionando métodos estructurados para almacenar, organizar y recuperar datos.</p>
+            <p>Las bases de datos se pueden clasificar según su estructura en bases de datos relacionales, no relacionales (NoSQL), jerárquicas, de red y orientadas a objetos, entre otras. Cada tipo tiene su propia metodología para la organización y gestión de datos, dependiendo de las necesidades específicas del sistema.</p>
+        </section>
+
+        <section>
+            <h2>¿Qué es el Modelo Relacional?</h2>
+            <p>El Modelo Relacional es un enfoque para la gestión de bases de datos en el que los datos se organizan en tablas (relaciones), cada una de las cuales consiste en filas (tuplas) y columnas (atributos). Este modelo, propuesto por Edgar F. Codd en 1970, se basa en la lógica de predicados y la teoría de conjuntos.</p>
+            <p>En el Modelo Relacional, las tablas están relacionadas entre sí mediante claves primarias y foráneas. Una clave primaria es un identificador único para las filas de una tabla, mientras que una clave foránea es un campo en una tabla que referencia la clave primaria en otra tabla, permitiendo establecer relaciones entre los datos.</p>
+            <p>El Modelo Relacional es ampliamente utilizado debido a su simplicidad y capacidad para manejar grandes volúmenes de datos, siendo la base de la mayoría de los sistemas de gestión de bases de datos (SGBD) modernos, como MySQL, PostgreSQL y Oracle.</p>
+        </section>
+
+        <section>
+            <h2>¿Qué es el Modelo E-R?</h2>
+            <p>El Modelo Entidad-Relación (E-R) es un modelo de datos que describe la estructura lógica de las bases de datos. Fue desarrollado por Peter Chen en 1976 y se utiliza para visualizar la estructura de una base de datos antes de implementarla.</p>
+            <p>El Modelo E-R se basa en tres componentes principales:</p>
+            <ul>
+                <li><strong>Entidades:</strong> Representan objetos o cosas dentro del dominio del sistema, como personas, productos, o eventos. Las entidades se representan como rectángulos en un diagrama E-R.</li>
+                <li><strong>Atributos:</strong> Son las propiedades o características de las entidades, como el nombre de una persona o el precio de un producto. Los atributos se representan como óvalos conectados a sus entidades.</li>
+                <li><strong>Relaciones:</strong> Describen cómo las entidades interactúan entre sí. Por ejemplo, una relación puede conectar una entidad "Empleado" con una entidad "Departamento" para mostrar que un empleado trabaja en un departamento. Las relaciones se representan como rombos en un diagrama E-R.</li>
+            </ul>
+            <p>El modelo E-R es una herramienta clave en el diseño de bases de datos, ayudando a los diseñadores a conceptualizar la estructura y las relaciones entre los datos de manera clara y precisa.</p>
+        </section>
+
+        <section>
+            <h2>¿Qué es un SGBD?</h2>
+            <p>Un Sistema de Gestión de Bases de Datos (SGBD) es un software que permite la creación, manipulación y gestión de bases de datos. Un SGBD proporciona una interfaz entre los usuarios finales y la base de datos, permitiendo realizar operaciones como la inserción, actualización, eliminación y consulta de datos.</p>
+            <p>Algunas de las funciones principales de un SGBD incluyen:</p>
+            <ul>
+                <li><strong>Almacenamiento de datos:</strong> Gestiona el almacenamiento físico de los datos en discos o medios de almacenamiento.</li>
+                <li><strong>Consulta de datos:</strong> Permite a los usuarios consultar y recuperar información específica utilizando un lenguaje de consulta, como SQL.</li>
+                <li><strong>Seguridad de datos:</strong> Implementa mecanismos de seguridad para proteger los datos contra accesos no autorizados.</li>
+                <li><strong>Integridad de datos:</strong> Mantiene la precisión y consistencia de los datos mediante reglas de integridad y restricciones.</li>
+                <li><strong>Control de concurrencia:</strong> Gestiona el acceso simultáneo a los datos por múltiples usuarios, garantizando que las transacciones se manejen de manera segura y eficiente.</li>
+            </ul>
+            <p>Ejemplos populares de SGBD incluyen MySQL, Oracle, Microsoft SQL Server, y PostgreSQL.</p>
+        </section>
+
+        <section>
+            <h2>¿Qué es la arquitectura del SGBD?</h2>
+            <p>La arquitectura de un SGBD describe la estructura interna y la organización de un sistema de gestión de bases de datos. Generalmente, incluye tres niveles:</p>
+            <ul>
+                <li><strong>Nivel Físico:</strong> Es el nivel más bajo, que describe cómo los datos se almacenan físicamente en el hardware. Incluye detalles como la organización de archivos, índices, y almacenamiento en discos.</li>
+                <li><strong>Nivel Lógico:</strong> También conocido como el esquema conceptual, este nivel define cómo los datos están organizados y relacionados entre sí. Describe las tablas, vistas, índices y restricciones que componen la base de datos, sin entrar en detalles físicos.</li>
+                <li><strong>Nivel de Vista:</strong> Es el nivel más alto, que proporciona una interfaz para los usuarios finales. Define cómo los datos son vistos por diferentes usuarios, permitiendo vistas personalizadas y abstracciones específicas según las necesidades de cada usuario o aplicación.</li>
+            </ul>
+            <p>Esta arquitectura de tres niveles permite a los SGBD manejar grandes cantidades de datos de manera eficiente, garantizando la independencia de los datos y facilitando la administración y el acceso controlado.</p>
+        </section>
+
+        <section>
+            <h2>Áreas de aplicación de las BD</h2>
+            <p>Las bases de datos se aplican en diversas áreas, permitiendo la gestión eficiente de la información en múltiples sectores. Algunas de las áreas más comunes incluyen:</p>
+            <ul>
+                <li><strong>Banca y Finanzas:</strong> Gestión de cuentas, transacciones, historial crediticio, y sistemas de pago en línea.</li>
+                <li><strong>Telecomunicaciones:</strong> Manejo de registros de llamadas, facturación, y gestión de clientes.</li>
+                <li><strong>Comercio Electrónico:</strong> Gestión de catálogos de productos, pedidos, pagos, y seguimiento de envíos.</li>
+                <li><strong>Educación:</strong> Gestión de registros académicos, inscripción de estudiantes, y administración de recursos educativos.</li>
+                <li><strong>Salud:</strong> Almacenamiento y acceso a historiales médicos, gestión de citas, y administración de seguros de salud.</li>
+                <li><strong>Sistemas de Información Empresarial:</strong> Soporte para la planificación de recursos empresariales (ERP), gestión de relaciones con clientes (CRM), y análisis de negocios (BI).</li>
+            </ul>
+            <p>Gracias a su flexibilidad y capacidad de adaptación, las bases de datos continúan siendo una herramienta esencial en la gestión de la información en prácticamente todos los sectores de la economía global.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Muñoz Licea Carlos Licea</h1>
+        <h1>Rosas Rodriguez Zaid</h1>
+    </footer>
+
+</body>
+</html>
